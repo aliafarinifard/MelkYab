@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 
 // Create BASE_URL
 export const api = axios.create({
-    baseURL: "https://real-estate-server-plum.vercel.app/api"
+    baseURL: "https://melkyab-server.vercel.app/api"
 });
 
 // Get All Properties
