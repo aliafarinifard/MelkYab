@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 
 // ** CSS Styles
 import "./App.scss";
@@ -36,6 +36,7 @@ const App = () => {
         token: null
     });
 
+
     return (
         <div>
             <UserDetailContext.Provider value={{ userDetails, setUserDetails }}>
@@ -61,7 +62,9 @@ const App = () => {
                             </Routes>
                         </Suspense>
                     </BrowserRouter>
-                    <ToastContainer />
+                    <ToastContainer
+                        rtl
+                    />
                     <ReactQueryDevtools initialIsOpen={false} />
                 </QueryClientProvider>
             </UserDetailContext.Provider>
