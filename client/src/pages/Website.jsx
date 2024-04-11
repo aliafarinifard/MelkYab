@@ -25,6 +25,9 @@ const Website = () => {
 
     return (
         <div className='App'>
+            {
+                toast('برای مشاهده موقعیت هر آگهی لطفا از VPN استفاده کنید', { position: 'top-center' })
+            }
             <div>
                 <div className='white-gradient' />
                 <Hero />
