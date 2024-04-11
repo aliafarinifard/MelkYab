@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // ** Styles
 import "./Hero.scss";
@@ -12,10 +12,22 @@ import CountUp from "react-countup";
 // ** Components
 import SearchBar from '../SearchBar/SearchBar';
 
+// ** Toast
+import { toast } from 'react-toastify'
+
 const Hero = () => {
+
+    useEffect(() => {
+        { 
+            toast('برای مشاهده موقعیت هر آگهی لطفا از VPN استفاده کنید', { position: 'top-center' }),
+            toast('بعد از ثبت نام و ورود به سایت، پاپ آپ را از بالای پنجره مرورگر خود فعال کنید', { position: 'top-center' })
+         }
+    }, [])
+
     return (
         <section className='hero-wrapper'>
             <div className="paddings innerWidth flexCenter hero-container">
+
 
 
                 {/* right side */}
