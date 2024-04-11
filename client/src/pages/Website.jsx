@@ -12,15 +12,15 @@ import { toast } from 'react-toastify'
 
 const Website = () => {
 
-    useEffect(() => {
-        return (
-            <div>
-                {
-                    toast('برای مشاهده موقعیت هر آگهی لطفا از VPN استفاده کنید', { position: 'top-center' })
-                }
-            </div>
-        )
-    }, []);
+    // useEffect(() => {
+    //     return (
+    //         <div>
+    //             {
+    //                 toast('برای مشاهده موقعیت هر آگهی لطفا از VPN استفاده کنید', { position: 'top-center' })
+    //             }
+    //         </div>
+    //     )
+    // }, []);
 
 
     return (
